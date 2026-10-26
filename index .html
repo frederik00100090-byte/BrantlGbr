@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>haustec 360 – Brantl GbR, Oftersheim</title>
+<meta name="description" content="Brantl GbR in Oftersheim: Fenster, Türen, Trockenbau, Sanierung, Bodenbelag und Aufbauservice aus einer Hand.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Instrument+Serif:ital@0;1&display=swap">
+<style>
+:root{--bg:#eceff1;--fg:#0e1a24;--mut:#55636e;--acc:#d9500f;--pan:#dde3e7;--ln:#0e1a2426;--ease:cubic-bezier(.2,.7,.1,1);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b141c;--fg:#e8eef2;--mut:#8b9ba7;--acc:#ff7a33;--pan:#13212c;--ln:#e8eef22e}}
+:root[data-theme="dark"]{--bg:#0b141c;--fg:#e8eef2;--mut:#8b9ba7;--acc:#ff7a33;--pan:#13212c;--ln:#e8eef22e}
+*{box-sizing:border-box;margin:0}
+html{scroll-padding-top:env(safe-area-inset-top,0px);height:100%}
+body{background:var(--bg);color:var(--fg);font:400 17px/1.6 "Space Grotesk",system-ui,sans-serif;overflow-x:hidden;min-height:100%;background-image:linear-gradient(var(--ln) 1px,transparent 1px),linear-gradient(90deg,var(--ln) 1px,transparent 1px);background-size:80px 80px;background-attachment:fixed}
+h1,h2,h3{font-family:"Instrument Serif",Georgia,serif;font-weight:400;line-height:.98;letter-spacing:-.01em}
+a{color:inherit}.wrap{padding:0 clamp(18px,5vw,72px)}
+header{position:fixed;inset:0 0 auto;z-index:20;display:flex;justify-content:space-between;align-items:center;padding:calc(14px + env(safe-area-inset-top,0px)) clamp(18px,5vw,72px) 14px;background:linear-gradient(var(--bg) 40%,transparent)}
+.logo{font:700 1.05rem "Space Grotesk";text-decoration:none;letter-spacing:.02em}.logo b{color:var(--acc)}
+nav{display:flex;gap:clamp(14px,2.5vw,34px)}
+nav a{text-decoration:none;font-size:.92rem;padding:8px 0;color:var(--mut);border-bottom:2px solid transparent;transition:border-color .4s,color .4s}
+nav a:hover,nav a[aria-current]{color:var(--fg);border-color:var(--acc)}
+.burger{display:none;background:var(--bg);border:1px solid var(--ln);color:var(--fg);border-radius:4px;padding:10px 16px;font:inherit}
+@media(max-width:760px){.burger{display:block;position:relative;z-index:30}nav{position:fixed;inset:0;background:var(--bg);flex-direction:column;justify-content:center;padding:0 8vw;gap:6px;transform:translateY(-100%);transition:transform .6s var(--ease)}nav.open{transform:none}nav a{font:400 3rem "Instrument Serif",Georgia,serif;color:var(--fg);border:0}}
+main{display:none;min-height:100vh}main.on{display:block;animation:in .7s var(--ease)}
+@keyframes in{from{opacity:0;transform:translateY(14px)}}
+.cta{display:inline-block;background:var(--acc);color:#fff;padding:14px 26px;border-radius:3px;text-decoration:none;border:0;font:500 1rem "Space Grotesk";cursor:pointer;transition:transform .4s var(--ease)}
+.cta:hover{transform:translateX(5px)}.cta.o{background:none;color:var(--fg);border:1px solid var(--ln)}
+.ey{font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;color:var(--acc);margin-bottom:16px}
+/* hero */
+.hero{height:240vh}
+.stick{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden;display:grid;place-items:center}
+.ring{position:absolute;width:min(92vw,86vh);aspect-ratio:1;border-radius:50%;background:repeating-conic-gradient(var(--fg) 0 .35deg,transparent .35deg 3deg);-webkit-mask:radial-gradient(circle,#0000 calc(70% - 1px),#000 70%,#000 calc(74%),#0000 calc(74% + 1px));mask:radial-gradient(circle,#0000 calc(70% - 1px),#000 70%,#000 calc(74%),#0000 calc(74% + 1px));opacity:.5;transform:rotate(calc(var(--p,0)*360deg))}
+.ring2{position:absolute;width:min(60vw,56vh);aspect-ratio:1;border-radius:50%;border:2px solid var(--acc);transform:scale(calc(1 + var(--p,0)*2.2));opacity:calc(1 - var(--p,0)*1.2)}
+.num{position:relative;font:400 clamp(6rem,30vw,26rem)/.8 "Instrument Serif",Georgia,serif;transform:scale(calc(1 + var(--p,0)*.6));opacity:calc(1 - var(--p,0)*1.1)}
+.num sup{font-size:.35em;color:var(--acc);vertical-align:top}
+.hl{position:absolute;left:clamp(18px,5vw,72px);bottom:calc(7vh + env(safe-area-inset-bottom,0px));max-width:34ch;opacity:calc(1 - var(--p,0)*3)}
+.hl h1{font-size:clamp(1.8rem,4vw,3rem);margin-bottom:14px}
+.t2{position:absolute;inset:0;display:grid;place-items:center;text-align:center;padding:0 8vw;opacity:calc(var(--p,0)*2 - .9);transform:translateY(calc((1 - var(--p,0))*40px));pointer-events:none}
+.t2 h2{font-size:clamp(2.4rem,7vw,6.5rem)}.t2 em{color:var(--acc)}
+/* horizontal */
+.hz{position:relative}.pin{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden;display:flex;flex-direction:column;justify-content:center}
+.hz h2{font-size:clamp(2rem,5vw,4.5rem);margin-bottom:4vh}
+.track{display:flex;gap:2vw;padding:0 clamp(18px,5vw,72px);will-change:transform}
+.pn{flex:0 0 min(60vw,560px);height:56vh;background:var(--pan);border:1px solid var(--ln);position:relative;padding:24px;display:flex;flex-direction:column;justify-content:space-between;text-decoration:none;overflow:hidden;transition:border-color .4s}
+.pn:hover{border-color:var(--acc)}
+.pn .n{font:400 clamp(5rem,12vw,10rem)/.8 "Instrument Serif",Georgia,serif;color:var(--acc);opacity:.9}
+.pn b{font:400 clamp(1.8rem,3.4vw,3rem) "Instrument Serif",Georgia,serif;display:block}.pn small{color:var(--mut)}
+.pn::after{content:"";position:absolute;right:-30px;top:-30px;width:140px;height:140px;border:1px solid var(--ln);border-radius:50%}
+.bar{height:2px;background:var(--ln);margin:4vh clamp(18px,5vw,72px) 0}.bar div{height:100%;background:var(--acc)}
+@media(max-width:760px),(prefers-reduced-motion:reduce){.hz{height:auto!important}.pin{position:static;height:auto;padding:12vh 0 4vh}.track{overflow-x:auto;scroll-snap-type:x mandatory;transform:none!important;padding-bottom:12px}.pn{scroll-snap-align:center;flex-basis:80vw;height:48vh}.bar{display:none}.hero{height:auto}.stick{position:relative}.t2{display:none}}
+@media(prefers-reduced-motion:reduce){main.on{animation:none}*{transition:none!important}}
+.sec{padding:14vh 0 8vh}
+.big{font-size:clamp(2.2rem,5vw,4.6rem)}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--ln);margin-top:8vh}
+.facts a,.facts div{padding:5vh clamp(14px,2vw,28px) 5vh 0;border-bottom:1px solid var(--ln);text-decoration:none}
+.facts h3{font-size:clamp(1.6rem,3vw,2.4rem);margin:6px 0}.facts small{color:var(--mut)}
+@media(max-width:760px){.facts{grid-template-columns:1fr}}
+.rv{opacity:0;transform:translateY(40px);transition:opacity 1s var(--ease),transform 1s var(--ease)}.rv.s{opacity:1;transform:none}
+/* explore accordion */
+.ac{display:flex;height:100vh;height:100svh;padding:16vh clamp(18px,5vw,72px) 6vh;gap:10px}
+.ac>div{flex:1;min-width:0;border:1px solid var(--ln);background:var(--pan);position:relative;overflow:hidden;transition:flex .8s var(--ease),border-color .4s;cursor:pointer;display:flex}
+.ac>div[aria-expanded=true]{flex:6;border-color:var(--acc);cursor:default}
+.ac h3{position:absolute;left:14px;top:14px;writing-mode:vertical-rl;font-size:clamp(1.4rem,2.4vw,2.2rem);white-space:nowrap;transition:opacity .4s}
+.ac>div[aria-expanded=true] h3{opacity:0}
+.ac .b{opacity:0;pointer-events:none;padding:clamp(18px,3vw,40px);min-width:min(520px,70vw);display:flex;flex-direction:column;justify-content:space-between;transition:opacity .5s .25s}
+.ac>div[aria-expanded=true] .b{opacity:1;pointer-events:auto}
+.b h3{position:static;writing-mode:horizontal-tb;opacity:1!important;font-size:clamp(2.2rem,4.6vw,4.2rem);white-space:normal}
+.b ul{list-style:none;padding:0;margin:18px 0}.b li{padding:10px 0;border-bottom:1px solid var(--ln)}.b li::before{content:"→ ";color:var(--acc)}
+.ac .i{position:absolute;right:14px;bottom:10px;font:400 3rem "Instrument Serif";color:var(--acc);opacity:.5}
+@media(max-width:760px){.ac{flex-direction:column;height:auto;min-height:100vh;padding-top:14vh}.ac>div{flex:none;min-height:64px;display:block}.ac>div[aria-expanded=true]{flex:none}.ac h3{position:static;writing-mode:horizontal-tb;padding:16px 14px;font-size:1.8rem}.ac .b{display:none;min-width:0}.ac>div[aria-expanded=true] .b{display:flex;opacity:1}.ac>div[aria-expanded=true]>h3{display:none}.ac .i{display:none}}
+/* showcase */
+.sc{display:flex;gap:8px;margin:4vh 0 3vh;flex-wrap:wrap}
+.sc button{background:none;border:1px solid var(--ln);color:var(--fg);padding:10px 20px;border-radius:3px;font:inherit;cursor:pointer}
+.sc button[aria-pressed=true]{background:var(--fg);color:var(--bg)}
+.ba{position:relative;height:min(68vh,640px);overflow:hidden;border:1px solid var(--ln);--pos:50%;touch-action:pan-y;user-select:none}
+.ba>div{position:absolute;inset:0;display:flex;align-items:flex-end;padding:20px}
+.ba .aft{clip-path:inset(0 0 0 var(--pos))}
+.ba .lab{background:var(--bg);color:var(--fg);padding:6px 12px;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase}
+.ba .aft .lab{margin-left:auto}
+.hnd{position:absolute;top:0;bottom:0;left:var(--pos);width:2px;background:#fff;pointer-events:none;box-shadow:0 0 0 1px #0004}
+.hnd::after{content:"⇆";position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:48px;height:48px;border-radius:50%;background:var(--acc);color:#fff;display:grid;place-items:center;font-size:1.3rem}
+.ba input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;margin:0}
+.ba:focus-within{outline:2px solid var(--acc);outline-offset:3px}
+.cap{color:var(--mut);margin-top:12px;font-size:.9rem}
+.vs{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--ln);border:1px solid var(--ln);margin-top:8vh}
+.vs div{background:var(--bg);padding:4vh 22px}.vs h3{font-size:2rem;margin:6px 0}
+@media(max-width:760px){.vs{grid-template-columns:1fr}}
+/* connect */
+.cn{display:grid;grid-template-columns:1fr 1fr;gap:8vw;min-height:100vh;padding-top:18vh}
+@media(max-width:760px){.cn{grid-template-columns:1fr;gap:6vh}}
+.cn h1{font-size:clamp(2.6rem,6vw,5.5rem)}
+.steps{display:flex;gap:6px;margin-bottom:24px}.steps i{flex:1;height:3px;background:var(--ln);transition:background .5s}.steps i.d{background:var(--acc)}
+fieldset{border:0;display:none;padding:0}fieldset.on{display:block;animation:in .6s var(--ease)}
+legend{font:400 2rem "Instrument Serif",Georgia,serif;margin-bottom:16px}
+.opt{display:flex;flex-wrap:wrap;gap:8px}
+.opt label{border:1px solid var(--ln);padding:11px 16px;border-radius:3px;cursor:pointer;background:var(--bg)}
+.opt input{position:absolute;opacity:0}.opt label:has(input:checked){background:var(--fg);color:var(--bg)}.opt label:has(input:focus-visible){outline:2px solid var(--acc);outline-offset:2px}
+input[type=text],input[type=email],input[type=tel],textarea{width:100%;background:none;border:0;border-bottom:1px solid var(--ln);color:var(--fg);font:inherit;padding:12px 0;margin-bottom:14px;border-radius:0}
+input:focus,textarea:focus{outline:0;border-color:var(--acc)}
+.row{display:flex;gap:10px;margin-top:18px;flex-wrap:wrap}
+.info p{margin-bottom:18px}.info small{display:block;color:var(--mut);text-transform:uppercase;letter-spacing:.15em;font-size:.72rem}
+footer{border-top:1px solid var(--ln);background:var(--bg);position:relative;padding:6vh clamp(18px,5vw,72px) calc(6vh + env(safe-area-inset-bottom,0px));color:var(--mut);font-size:.9rem;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+footer span a{margin-right:14px}
+:focus-visible{outline:2px solid var(--acc);outline-offset:3px}
+</style>
+</head>
+<body>
+<header>
+<a class="logo" href="#home">haustec<b>360</b></a>
+<button class="burger" aria-expanded="false" aria-controls="nav">Menü</button>
+<nav id="nav" aria-label="Hauptnavigation"><a href="#home">Home</a><a href="#explore">Explore</a><a href="#showcase">Showcase</a><a href="#connect">Connect</a></nav>
+</header>
+
+<main id="home" data-t="haustec 360 – Brantl GbR, Oftersheim">
+<section class="hero" id="hero"><div class="stick">
+<div class="ring" aria-hidden="true"></div><div class="ring2" aria-hidden="true"></div>
+<div class="num" aria-hidden="true">360<sup>°</sup></div>
+<div class="hl"><h1>Fenster, Türen, Trockenbau und Sanierung aus einer Hand.</h1><a class="cta" href="#connect">Anfrage starten</a></div>
+<div class="t2"><h2>Rundum <em>geplant</em> und ausgeführt.</h2></div>
+</div></section>
+
+<section class="hz" id="hz"><div class="pin">
+<div class="wrap"><p class="ey">Von außen nach innen</p><h2>Ein Haus. Sechs Stationen.</h2></div>
+<div class="track" id="track">
+<a class="pn" href="#explore" data-go="0"><span class="n">01</span><div><b>Türen</b><small>Haustüren aus PVC, Aluminium oder Holz</small></div></a>
+<a class="pn" href="#explore" data-go="1"><span class="n">02</span><div><b>Fenster &amp; Beschattung</b><small>Fenster, Markisen, Jalousien, Sektionaltore</small></div></a>
+<a class="pn" href="#explore" data-go="2"><span class="n">03</span><div><b>Trockenbau</b><small>Innenausbau, Akustikdecken, indirekte Beleuchtung</small></div></a>
+<a class="pn" href="#explore" data-go="3"><span class="n">04</span><div><b>Sanierung</b><small>Bausanierung und Renovierung</small></div></a>
+<a class="pn" href="#explore" data-go="4"><span class="n">05</span><div><b>Boden</b><small>Bodenbelag und Verlegung</small></div></a>
+<a class="pn" href="#explore" data-go="5"><span class="n">06</span><div><b>Service</b><small>Aufbauservice, Hausverwaltungen</small></div></a>
+</div>
+<div class="bar" aria-hidden="true"><div></div></div>
+</div></section>
+
+<section class="sec wrap">
+<div class="rv"><p class="ey">Brantl GbR · Oftersheim</p><h2 class="big" style="max-width:18ch">Planung und Ausführung, ohne Schnittstellen.</h2></div>
+<div class="facts rv">
+<a href="#explore"><small>01</small><h3>Explore</h3><small>Alle Leistungen →</small></a>
+<a href="#showcase"><small>02</small><h3>Showcase</h3><small>Vorher-nachher-Regler →</small></a>
+<a href="#connect"><small>03</small><h3>Connect</h3><small>Anfrage in drei Schritten →</small></a>
+</div>
+<p style="margin-top:6vh"><a class="cta o" href="https://brantlgbr.window4u.de/" rel="noopener">Zum Shop für Fenster und Türen ↗</a></p>
+</section>
+</main>
+
+<main id="explore" data-t="Explore – haustec 360">
+<div class="ac" id="ac"></div>
+</main>
+
+<main id="showcase" data-t="Showcase – haustec 360">
+<section class="sec wrap">
+<p class="ey">Showcase</p><h1 class="big" style="font-size:clamp(2.6rem,8vw,7rem)">Vorher. Nachher.</h1>
+<p style="color:var(--mut);max-width:54ch;margin-top:14px">Demo-Illustrationen: Hier erscheinen später echte Projektfotos. Ziehen Sie den Regler oder nutzen Sie die Pfeiltasten.</p>
+<div class="sc" id="sc" role="group" aria-label="Szene"></div>
+<div class="ba" id="ba"><div class="bef"><span class="lab">Vorher</span></div><div class="aft"><span class="lab">Nachher</span></div><div class="hnd"></div><input type="range" min="0" max="100" value="50" aria-label="Vorher-nachher-Regler" id="rg"></div>
+<p class="cap" id="cap"></p>
+<div class="vs"><div><small>Hinweis</small><h3>Alles aus einer Hand</h3><p>Die Brantl GbR plant und führt aus. Fotos folgen.</p></div><div><small>Shop</small><h3>Fenster und Türen online</h3><p><a href="https://brantlgbr.window4u.de/" rel="noopener">brantlgbr.window4u.de ↗</a></p></div><div><small>Weiter</small><h3>Ihr Projekt?</h3><p><a href="#connect">Jetzt anfragen →</a></p></div></div>
+</section>
+</main>
+
+<main id="connect" data-t="Connect – haustec 360">
+<section class="wrap cn">
+<div><p class="ey">Connect</p><h1>Was soll bei Ihnen passieren?</h1>
+<div class="info" style="margin-top:6vh">
+<p><small>Adresse</small>Brantl GbR<br>Silcherstraße 2<br>68723 Oftersheim</p>
+<p><small>Telefon</small><a href="tel:+496202929737">06202-929737</a></p>
+<p><small>E-Mail</small><a href="mailto:info@haustec360.de">info@haustec360.de</a></p></div></div>
+<form id="f" novalidate>
+<div class="steps"><i class="d"></i><i></i><i></i></div>
+<fieldset class="on"><legend>1 · Leistungen (mehrere möglich)</legend><div class="opt" id="fo"></div><div class="row"><button type="button" class="cta" data-n>Weiter</button></div></fieldset>
+<fieldset><legend>2 · Details</legend><label for="msg" style="color:var(--mut)">Ort, Maße, Zeitraum, Wünsche</label><textarea id="msg" rows="5"></textarea>
+<div class="row"><button type="button" class="cta o" data-p>Zurück</button><button type="button" class="cta" data-n>Weiter</button></div></fieldset>
+<fieldset><legend>3 · Kontakt</legend>
+<input type="text" id="nm" placeholder="Name" autocomplete="name" aria-label="Name">
+<input type="email" id="em" placeholder="E-Mail" autocomplete="email" aria-label="E-Mail">
+<input type="tel" id="ph" placeholder="Telefon (optional)" autocomplete="tel" aria-label="Telefon">
+<p id="err" role="alert" style="color:var(--acc);min-height:1.5em"></p>
+<div class="row"><button type="button" class="cta o" data-p>Zurück</button><button type="submit" class="cta">E-Mail vorbereiten</button></div>
+<p style="color:var(--mut);font-size:.85rem;margin-top:14px">Es öffnet sich Ihr E-Mail-Programm mit fertigem Text an info@haustec360.de. Auf dieser Seite wird nichts gespeichert.</p></fieldset>
+</form></section>
+</main>
+
+<footer><span>© Brantl GbR · Silcherstraße 2 · 68723 Oftersheim</span><span><a href="https://haustec360.de/impressum.html" rel="noopener">Impressum</a><a href="https://haustec360.de/datenschutz.html" rel="noopener">Datenschutz</a></span></footer>
+
+<script>
+(function(){
+var G=[["Türen",["Haustüren aus PVC, Aluminium oder Holz","Große Auswahl an Türprofilen","Wohnungseingangstüren","Zimmertüren"]],
+["Fenster & Beschattung",["Fenster und Balkontüren","Schiebeelemente","Markisen","Jalousien","Sektionaltore"]],
+["Trockenbau & Innenausbau",["Trockenbau","Akustikdecken","Indirekte Deckenbeleuchtung","Schaffung von Wohnraum"]],
+["Sanierung & Renovierung",["Bausanierung","Sanierung von Innenräumen","Renovierung nach Auszug","Tapezieren"]],
+["Bodenbelag",["Bodenbelag","Bodenverlegen"]],
+["Service",["Aufbauservice und Möbelaufbau","Dienstleister für Hausverwaltungen","Renovierungen aller Art"]]];
+var $=function(s,r){return(r||document).querySelector(s)},$$=function(s,r){return[].slice.call((r||document).querySelectorAll(s))};
+var reduce=matchMedia("(prefers-reduced-motion:reduce)").matches,narrow=function(){return innerWidth<=760},preset=[];
+var nav=$("#nav"),bg=$(".burger");
+bg.onclick=function(){var o=nav.classList.toggle("open");bg.setAttribute("aria-expanded",o)};
+var pages=["home","explore","showcase","connect"];
+function route(){var h=(location.hash||"#home").slice(1);if(pages.indexOf(h)<0)h="home";
+$$("main").forEach(function(m){m.classList.toggle("on",m.id===h)});
+$$("nav a").forEach(function(a){a.getAttribute("href")==="#"+h?a.setAttribute("aria-current","page"):a.removeAttribute("aria-current")});
+document.title=$("#"+h).dataset.t;scrollTo(0,0);nav.classList.remove("open");bg.setAttribute("aria-expanded","false");tick();
+if(h==="connect"){var pr=preset;preset=[];$$("#fo input").forEach(function(i){i.checked=pr.indexOf(i.value)>-1});go(0)}}
+addEventListener("hashchange",route);
+/* scroll */
+var hero=$("#hero"),hz=$("#hz"),tr=$("#track"),bar=$(".bar div");
+function cl(x){return Math.max(0,Math.min(1,x))}
+function tick(){if(!$("#home").classList.contains("on"))return;
+var r=hero.getBoundingClientRect(),p=narrow()||reduce?0:cl(-r.top/(r.height-innerHeight));hero.style.setProperty("--p",p);
+if(narrow()||reduce){hz.style.height="";tr.style.transform="";return}
+var d=tr.scrollWidth-innerWidth;hz.style.height=innerHeight+d+"px";var q=cl(-hz.getBoundingClientRect().top/d);
+tr.style.transform="translate3d("+(-q*d)+"px,0,0)";bar.style.width=q*100+"%"}
+var raf=0;addEventListener("scroll",function(){if(!raf)raf=requestAnimationFrame(function(){raf=0;tick()})},{passive:true});addEventListener("resize",tick);
+addEventListener("keydown",function(e){if(!$("#home").classList.contains("on")||narrow()||reduce||e.target.closest("input,textarea,button"))return;var r=hz.getBoundingClientRect();if(r.top<=0&&r.bottom>innerHeight){if(e.key==="ArrowRight")scrollBy({top:300});if(e.key==="ArrowLeft")scrollBy({top:-300})}});
+var io=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting)x.target.classList.add("s")})},{threshold:.15});
+$$(".rv").forEach(function(e){reduce?e.classList.add("s"):io.observe(e)});
+/* explore */
+var ac=$("#ac");
+G.forEach(function(g,i){var d=document.createElement("div");d.setAttribute("aria-expanded",i===0);d.tabIndex=0;d.setAttribute("role","button");
+d.innerHTML='<h3>'+g[0]+'</h3><span class="i">0'+(i+1)+'</span><div class="b"><div><p class="ey">0'+(i+1)+'</p><h3>'+g[0]+'</h3><ul>'+g[1].map(function(x){return"<li>"+x+"</li>"}).join("")+'</ul></div><div><a class="cta" href="#connect" data-q="'+i+'">Dafür anfragen</a></div></div>';
+d.onclick=function(){op(i)};d.onkeydown=function(e){if(e.target!==d)return;if(e.key==="Enter"||e.key===" "){e.preventDefault();op(i)}if(e.key==="ArrowRight"||e.key==="ArrowDown"){e.preventDefault();ac.children[(i+1)%6].focus();op((i+1)%6)}if(e.key==="ArrowLeft"||e.key==="ArrowUp"){e.preventDefault();ac.children[(i+5)%6].focus();op((i+5)%6)}};ac.appendChild(d)});
+function op(i){$$("#ac>div").forEach(function(d,k){d.setAttribute("aria-expanded",k===i)})}
+$$("[data-q]").forEach(function(a){a.onclick=function(){preset=[G[a.dataset.q][0]]}});
+$$("[data-go]").forEach(function(a){a.onclick=function(){op(+a.dataset.go)}});
+/* showcase */
+var S=[["Decke","Trockenbau mit indirekter Deckenbeleuchtung","linear-gradient(#aeb4b8 0 30%,#9aa1a5 30% 100%)","radial-gradient(ellipse at 50% 22%,#ffd9a0 0,#ffd9a000 55%),linear-gradient(#f4efe8 0 30%,#e8e2d8 30% 100%)"],
+["Fenster","Neues Fenster statt altem Rahmen","linear-gradient(#cfc7bb,#cfc7bb) center/38% 42% no-repeat,linear-gradient(#8b7a64,#8b7a64) center/46% 52% no-repeat,#b9b2a6","linear-gradient(135deg,#bfe0f5,#eaf6ff) center/72% 70% no-repeat,linear-gradient(#2b3238,#2b3238) center/80% 78% no-repeat,#e9e6e1"],
+["Boden","Bodenbelag neu verlegt","repeating-linear-gradient(90deg,#0000 0 120px,#0002 120px 121px),linear-gradient(#8f9396,#7a7e81)","repeating-linear-gradient(90deg,#0000 0 3px,#0000001a 3px 4px,#0000 4px 70px,#0000002e 70px 72px),repeating-linear-gradient(0deg,#0000 0 160px,#0003 160px 162px),linear-gradient(100deg,#c79a63,#a8793f)"]];
+var sc=$("#sc"),ba=$("#ba"),rg=$("#rg");
+S.forEach(function(s,i){var b=document.createElement("button");b.textContent=s[0];b.setAttribute("aria-pressed",i===0);b.onclick=function(){sw(i)};sc.appendChild(b)});
+function sw(i){$$("#sc button").forEach(function(b,k){b.setAttribute("aria-pressed",k===i)});$(".bef").style.background=S[i][2];$(".aft").style.background=S[i][3];$("#cap").textContent="Demo: "+S[i][1]+". Illustration, kein Projektfoto."}
+rg.oninput=function(){ba.style.setProperty("--pos",rg.value+"%")};sw(0);
+/* form */
+var fo=$("#fo");G.concat([["Anderes"]]).forEach(function(g){var l=document.createElement("label");l.innerHTML='<input type="checkbox" value="'+g[0].replace(/&/g,"&amp;")+'"> '+g[0].replace(/&/g,"&amp;");fo.appendChild(l)});
+var fs=$$("fieldset"),st=$$(".steps i"),n=0;
+function go(k){n=k;fs.forEach(function(f,i){f.classList.toggle("on",i===k)});st.forEach(function(s,i){s.classList.toggle("d",i<=k)})}
+$$("[data-n]").forEach(function(b){b.onclick=function(){go(n+1)}});$$("[data-p]").forEach(function(b){b.onclick=function(){go(n-1)}});
+$("#f").onsubmit=function(e){e.preventDefault();var nm=$("#nm").value.trim(),em=$("#em").value.trim();
+if(!nm||!/^\S+@\S+\.\S+$/.test(em)){$("#err").textContent="Bitte Name und gültige E-Mail-Adresse angeben.";return}
+$("#err").textContent="";var w=$$("#fo input:checked").map(function(i){return i.value}).join(", ")||"Allgemeine Anfrage";
+var body="Anfrage: "+w+"\n\n"+$("#msg").value+"\n\nName: "+nm+"\nE-Mail: "+em+"\nTelefon: "+$("#ph").value;
+location.href="mailto:info@haustec360.de?subject="+encodeURIComponent("Anfrage: "+w)+"&body="+encodeURIComponent(body)};
+route();
+})();
+</script>
+</body>
+</html>
